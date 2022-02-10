@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BallCollider : MonoBehaviour
 {
-	private void OnCollisionEnter2D(Collision2D collision)
-	{ 
-		Debug.Log(gameObject.name + " hit " + collision.gameObject.name);
-	}
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        Debug.Log(collision.gameObject.name);
+    }
 }

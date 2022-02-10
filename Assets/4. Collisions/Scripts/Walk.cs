@@ -27,6 +27,17 @@ public class Walk : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		Debug.Log("Hit " + collision.gameObject.name);
+		if(collision.tag == "Points")
+        {
+			collision.transform.position = new Vector3(Random.Range(-5f,5f), Random.Range(-5f, 5f), 0);
+        }
+		else if(collision.tag == "Damage")
+        {
+			transform.position = new Vector3(0, 0, 0);
+        }
+        else
+        {
+			Debug.Log("Not sure what you hit.");
+        }
 	}
 }
