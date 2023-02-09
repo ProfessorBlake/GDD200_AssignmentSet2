@@ -8,6 +8,8 @@ TagManager:
   - Reset
   - Points
   - Damage
+  - Enemy
+  - Health
   layers:
   - Default
   - TransparentFX
@@ -15,9 +17,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Items
+  - Enemy
+  - Player
   - 
   - 
   - 
